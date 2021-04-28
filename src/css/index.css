@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+  --body: #ffffff;
+  --primary: #0060ff;
+  --headerPrimary: #2c3765;
+  --primaryFont: 'Montserrat', sans-serif;
+  --boldFont: 'Righteous', cursive;
+}
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  list-style-type:none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--body);
+}
+
+.header-section{
+  position:relative;
+  background-color: var(--body);
+  overflow-x:hidden;
+}
+
+.header-section:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:-50%;
+  width:80%;
+  height:100%;
+  background-color: var(--primary);
+  transform: skew(-.11rad);
+}
+
+.header-wrapper {
+  max-width:1300px;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  margin:auto;
+  padding:15px 0px;
+}
+
+.lg-nv {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo{
+  padding:7px 30px;
+  background-color:#e6eeff;
+  font-size:23px;
+  font-family: var(--boldFont);
+  color:#004bff;
+  border-radius:30px;
+}
+
+nav {
+  margin-left:80px;
+}
+
+nav ul {
+  display:flex;
+}
+
+nav ul li {
+  margin-right:30px;
+  font-family: var(--primaryFont);
+  font-size:14px;
+  color:var(--headerPrimary);
+  transition-duration: 0.3s;
+  cursor:pointer;
+}
+
+nav ul li:hover {
+  color: var(--primary);
+}
+
+.patient-login{
+  position:relative;
+  z-index:1;
+}
+
+.btn-login{
+  padding:15px 30px;
+  background-color: var(--body);
+  font-size: 14px;
+  font-family: var(--primaryFont);
+  font-weight:bold;
+  color:#003bfe;
+  border-radius:6px;
+  cursor:pointer;
+  border:none;
+}
+
+.doc-image{
+  position:relative;
+  display:flex;
+  margin:auto;
+  margin-right:70px;
+  margin-top:50px;
+  z-index:1;
+}
+
+.find-doctor{
+  margin-top:120px;
+}
+
+.find-doctor h2 {
+  margin-bottom:20px;
+  font-family: var(--boldFont);
+  font-size:65px;
+  color: var(--primary);
+}
+
+.fn-d-pr {
+  display: block;
+  font-size: 15px;
+  font-family:var(--primaryFont);
+  font-weight:bold;
+  color: var(--headerPrimary);
+}
+
+.searchForm{
+  position: relative;
+  margin-top: 30px;
+}
+
+.choose-doc{
+  float:left;
+  width:350px;
+  padding:15px 20px;
+  margin-top:10px;
+  border:1px solid#eeeff0;
+  box-shadow: 0 0 15px #eeeff0;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.choose-doc span {
+  font-size:15px;
+  font-family: var(--primaryFont);
+  color:#c8ccd9;
+}
+
+.docChange{
+  overflow: hidden;
+  padding: 10px 1px;
+  margin-bottom:40px;
+}
+
+.docat {
+  position:absolute;
+  margin-top:65px;
+}
+
+.docat ul {
+  display:flex;
+  margin-left:15px;
+}
+
+.docat ul li {
+  margin:5px;
+  padding:0px 20px 0 0px;
+  font-size:14px;
+  font-family: var(--primaryFont);
+  color:var(--headerPrimary);
+  list-style-type:disc;
+  cursor:pointer;
+  transition-duration: 0.3s;
+}
+
+.docat ul li:hover {
+  color: var(--primary);
+}
+
+.visible {
+  display:block;
+}
+
+.invisible {
+  display:none;
+}
+
+.phonescope{
+  color: var(--primary);
+  float:left;
+  margin-right:25px;
+  margin-top:1px;
+}
+
+.btn-searchdoc{
+  float:left;
+  margin-left:20px;
+  margin-top:10px;
+  padding:15px 30px;
+  background: rgb(0,212,255);
+  background: -webkit-linear-gradient(left, rgba(0,212,255,1) 0%, rgba(0,104,255,1) 0%, rgba(0,138,255,1) 59%);
+  background: -o-linear-gradient(left, rgba(0,212,255,1) 0%, rgba(0,104,255,1) 0%, rgba(0,138,255,1) 59%);
+  background: linear-gradient(to right, rgba(0,212,255,1) 0%, rgba(0,104,255,1) 0%, rgba(0,138,255,1) 59%);
+  font-family: var(--boldFont);
+  font-size:15px;
+  color:var(--body);
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.rateDoc {
+  width: 100%;
+  overflow: hidden;
+}
+
+.star-doc{
+  float:left;
+  margin-right:5px;
+  font-size:19px;
+  color:#fbb726;
+}
+
+.rateDoc span {
+  margin-left:15px;
+  font-size:15px;
+  font-family: var(--primaryFont);
+  color:var(--headerPrimary);
+}
