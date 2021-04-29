@@ -1,22 +1,33 @@
-import React, {useState, useReducer} from 'react';
+import React, {useReducer} from 'react';
 import {data} from '../data';
 import EachItem from './eachitem';
 
 const reducer = (state,action)=> {
-  if(action.type==='All'){
-    return action.payload = 'All';
-  }else if(action.type === 'Cardiologist'){
-    return action.payload = 'Cardiologist';
-  }else if(action.type === 'Orthopedics'){
-    return action.payload = 'Orthopedics';
-  }else if(action.type === 'Concology'){
-    return action.payload = 'Concology';
-  }else if(action.type === 'Dermatology'){
-    return action.payload = 'Dermatology';
-  }else if(action.type === 'Surgery'){
-    return action.payload = 'Surgery';
-  }else if(action.type === 'Ginecology'){
-    return action.payload = 'Ginecology';
+  switch (action.type) {
+    case 'All':
+      return action.payload = 'All';
+      break;
+    case 'Cardiologist':
+      return action.payload = 'Cardiologist';
+      break;
+    case 'Orthopedics':
+      return action.payload = 'Orthopedics';
+      break;
+    case 'Concology':
+      return action.payload = 'Concology';
+      break;
+    case 'Dermatology':
+      return action.payload = 'Dermatology';
+      break;
+    case 'Surgery':
+      return action.payload = 'Surgery';
+      break;
+    case 'Ginecology':
+      return action.payload = 'Ginecology';
+      break;
+    default:
+      return ''
+      break;
   }
 }
 
@@ -24,7 +35,7 @@ const value = 'All';
 const Doctors = () => {
   const [state, dispatch] = useReducer(reducer, value);
   const filtred = data.filter((e)=> e.job === state);
-  console.log(filtred);
+
   return <>
     <div className="cont-filt">
       <div className="filter-specialty">

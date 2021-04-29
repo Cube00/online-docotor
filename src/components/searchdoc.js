@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import {FaStethoscope} from 'react-icons/fa';
 import {AiTwotoneStar} from 'react-icons/ai';
 
@@ -14,10 +15,17 @@ const SearchDoc = () => {
     }
   }
 
+  const setSearch = () => {
+    localStorage.setItem('category', JSON.stringify(docat));
+  }
+
+  const categorItem = JSON.parse(localStorage.getItem('category'));
+
   const setDoc = (e) => {
     setDocat(e.target.textContent);
     setBlockApp(false);
   }
+
 
   return <>
     <div className="searchForm">
@@ -26,7 +34,9 @@ const SearchDoc = () => {
         <FaStethoscope className="phonescope" />
         <span>{docat}</span>
         </div>
-        <div className="btn-searchdoc">Search Doctor</div>
+        <Link to="/search">
+          <button onClick={()=>setSearch()} className="btn-searchdoc">Search Doctor</button>
+        </Link>
         <div className={blockApp ? 'docat visible' : 'docat invisible' }>
         <ul>
         <li onClick={(e)=>{setDoc(e)}}>Cardiologist</li>

@@ -1,26 +1,26 @@
+import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+
 const Header = () => {
   return <>
     <header>
       <div className="header-wrapper">
         <div className="lg-nv">
-          <div className="logo">
-          ola.doc
-          </div>
+          <div className="logo">ola.doc</div>
           <nav>
-          <ul>
-          <li>
-          Home
-          </li>
-          <li>
-          About us
-          </li>
-          <li>
-          How it works?
-          </li>
-          <li>
-          Contact
-          </li>
-          </ul>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+                </li>
+              <li>
+                <Link to="/about">About us</Link>
+              </li>
+              <li>
+                <Link to="/howitworks">How it works?</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
           </nav>
         </div>
         <div className="patient-login">
