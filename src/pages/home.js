@@ -2,6 +2,7 @@ import Image from '../images/docimage.png';
 import SearchDoc from '../components/searchdoc';
 import CompaniesList from '../components/companies';
 import Doctors from '../components/doctors';
+import Doctorsimage from '../images/doctorsimage.png';
 
 const Home = () => {
   return <>
@@ -53,6 +54,9 @@ const Home = () => {
           our mobile app for progreess tracking and making your life easier with
           ala app.</h4>
           <button className="btn-searchdoc hmbt">Search Doctor</button>
+        </div>
+        <div className="diff_block_image">
+          <img src={Doctorsimage} alt=""/>
         </div>
       </div>
     </div>

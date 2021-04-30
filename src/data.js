@@ -36,7 +36,7 @@ export const data = [{
 },{
   name:'Dr. Tanya Sale',
   num: '56 Natalie Brook, Apt 67',
-  job: 'Surgery',
+  job: 'Cardiologist',
   image: Image5,
   rating: 4.9,
   id:5

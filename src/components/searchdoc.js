@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {FaStethoscope} from 'react-icons/fa';
 import {AiTwotoneStar} from 'react-icons/ai';
 
@@ -18,8 +18,6 @@ const SearchDoc = () => {
   const setSearch = () => {
     localStorage.setItem('category', JSON.stringify(docat));
   }
-
-  const categorItem = JSON.parse(localStorage.getItem('category'));
 
   const setDoc = (e) => {
     setDocat(e.target.textContent);

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Header = () => {
   return <>
@@ -15,7 +15,7 @@ const Header = () => {
                 <Link to="/about">About us</Link>
               </li>
               <li>
-                <Link to="/howitworks">How it works?</Link>
+                <Link to="/">How it works?</Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>

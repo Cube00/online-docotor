@@ -6,28 +6,20 @@ const reducer = (state,action)=> {
   switch (action.type) {
     case 'All':
       return action.payload = 'All';
-      break;
     case 'Cardiologist':
       return action.payload = 'Cardiologist';
-      break;
     case 'Orthopedics':
       return action.payload = 'Orthopedics';
-      break;
     case 'Concology':
       return action.payload = 'Concology';
-      break;
     case 'Dermatology':
       return action.payload = 'Dermatology';
-      break;
     case 'Surgery':
       return action.payload = 'Surgery';
-      break;
     case 'Ginecology':
       return action.payload = 'Ginecology';
-      break;
     default:
       return ''
-      break;
   }
 }
 
