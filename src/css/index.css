@@ -95,7 +95,7 @@ nav ul li a:hover {
 
 .btn-login{
   padding:15px 30px;
-  background-color: var(--body);
+  background-color: #f9fbfe;/*var(--body)*/
   font-size: 14px;
   font-family: var(--primaryFont);
   font-weight:bold;
@@ -602,4 +602,126 @@ footer {
   color: var(--body);
   font-weight:200;
   font-size:12px;
+}
+
+/*about*/
+.about_page {
+  max-width:1300px;
+  width:100%;
+  margin:auto;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.doc-bout {
+  display:flex;
+  justify-content: space-between;
+  height:500px;
+  background-color: #2f79f4;
+  border-radius:6px;
+}
+
+.doc-half-1,.doc-half-2 {
+  position: relative;
+  overflow:hidden;
+  width:50%;
+}
+
+.doc-half-1 p {
+  margin:150px 150px 50px;
+  font-size:15px;
+  font-family: var(--primaryFont);
+  color: var(--body);
+  line-height: 1.5;
+}
+
+.doc-half-1:before {
+  content: 'About Us';
+  position:absolute;
+  margin:124px 90px;
+  font-family: var(--boldFont);
+  font-size:45px;
+  color:var(--body);
+  opacity:0.2;
+}
+
+.doc-half-1 h4{
+  margin:0 150px 0;
+  font-size:14px;
+  font-family: var(--primaryFont);
+  font-weight:200;
+  color: #a7cdf4;
+  line-height: 1.5;
+}
+
+.doc-half-1 h4 a {
+  color: var(--body);
+}
+
+.doc-half-2 img{
+  width:100%;
+}
+
+.about_us_text{
+  margin:50px 0;
+}
+
+.com-about{
+  font-size:28px;
+  color:var(--body);
+}
+
+.about_us_text p {
+  font-size:18px;
+  margin: 10px 25px;
+  font-family: var(--primaryFont);
+  max-width:500px;
+  font-weight: bold;
+}
+.cm-b{
+  margin-bottom:30px;
+}
+.cm-b span{
+  padding:30px 15px 10px;
+  background-color:#2f79f4;
+  border-radius:50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px #b7cef6;
+}
+
+.bspan {
+  max-width:600px;
+  margin:20px 100px;
+  font-family: var(--primaryFont);
+  color:#707070;
+  font-size:13px;
+}
+
+.flexible{
+  display:Flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.our-team {
+  width:300px;
+  margin:50px;
+  background-color:#e4edff;
+  padding:30px;
+  border-radius:6px;
+}
+
+.our-team h2 {
+  margin-top:20px;
+  font-family:var(--boldFont);
+  font-size:35px;
+  color: var(--primary);
+  text-align:center;
+}
+
+.our-team h3 {
+  font-family:var(--primaryFont);
+  font-size:15px;
+  color: var(--headerPrimary);
+  text-align:center;
 }

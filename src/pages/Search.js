@@ -1,5 +1,6 @@
 const Search = () => {
-  return 'search'
+  const globalStor = JSON.parse(localStorage.getItem('category'));
+  return <>{globalStor}</>
 }
 
 export default Search;
