@@ -42,7 +42,7 @@ const SearchDoc = () => {
         <li onClick={(e)=>{setDoc(e)}}>Concology</li>
         <li onClick={(e)=>{setDoc(e)}}>Dermatology</li>
         <li onClick={(e)=>{setDoc(e)}}>Surgery</li>
-        <li onClick={(e)=>{setDoc(e)}}>Gyncology</li>
+        <li onClick={(e)=>{setDoc(e)}}>Ginecology</li>
         </ul>
         </div>
       </div>
